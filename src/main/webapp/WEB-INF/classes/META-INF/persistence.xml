@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <persistence-unit name="presupuestos">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>com.presupuestos.presupuestos.entity.Item</class>
+        <class>com.presupuestos.presupuestos.entity.Visitant</class>
+        <properties>
+            <!--            <property name="hibernate.default_schema" value="jyaa2024_bd10"/>-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql:mysql.java.linti.unlp.edu.ar/jyaa2024_bd10"/>
+            <property name="hibernate.connection.username" value="jyaa2024_usr10"/>
+            <property name="hibernate.connection.password" value="jyaa2024_pwd10"/>
+        </properties>
+    </persistence-unit>
+</persistence>
